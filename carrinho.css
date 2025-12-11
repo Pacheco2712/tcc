@@ -7,6 +7,10 @@ header{
     background-color: black;
     padding: 20px 0;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .logo{
     width: 220px;
     border-radius: 50%;
@@ -55,7 +59,7 @@ input{
     background-color: #111;
     color: #eee;
     border-radius: 18px;
-    width: 100px;
+    width: 80px;
     height: 50px;
     margin: 20px auto;
     display: flex;
@@ -65,8 +69,9 @@ input{
 footer {
     background: #111;
     color: #eee;
-    padding: 40px 20px;
     margin-top: 50px;
+    padding: 20px;
+    text-align: center;
 }
 
 .footer-container {
@@ -97,6 +102,25 @@ footer {
 .footer-logo h2 {
     font-size: 24px;
     margin-bottom: 5px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+footer {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 

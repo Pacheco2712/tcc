@@ -12,7 +12,6 @@ header{
     background-color: black;
     padding: 20px 0;
 }
-
 .logo{
     width: 220px;
     border-radius: 50%;
@@ -29,17 +28,9 @@ header{
     border-radius: 18px;
     width: 90%;
 }
-
-.categorias button {
-    border: none;
-    background: none;
-    font-size: 18px;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.categorias button:hover {
-    color: white;
+.categorias a{
+    text-decoration: none;
+    color: inherit;
 }
 .produtos{
     padding: 20px;
@@ -158,4 +149,31 @@ input{
     border-radius: 15px;
     height: 30px;
     text-align: center;
+}
+#toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .4s;
+    font-size: 16px;
+    z-index: 9999;
+}
+
+#toast.show {
+    opacity: 1;
+}
+.remover{
+    background-color: #000;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    width: 60px;
+    border-radius: 15px;
+    height: 30px;
 }
